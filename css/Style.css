@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Tahoma, Arial;
+  }
+
+  ul {
+    list-style: none;
+  }
+ 
+
+  .background {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    z-index: -5;
+  }
+
+  .container {
+    color: white;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+  }
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+    
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  header {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+  }
+
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+
+  header nav img {
+   width: 64px ;
+  }
+
+  header nav ul {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  header nav ul li {
+    padding: 0 15px;
+  }
+
+  header button {
+    border: none;
+    border: 1px solid white;
+    outline: none;
+    background-color:  #0f002b ;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 72px);
+    
+
+  }
+
+  .content .detail h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+  }
+
+  .content .detail h1 span{
+
+  }
+
+  .content .detail p {
+   max-width:290px ;
+   margin-bottom: 20px;
+   line-height: 1.6;
+  }
+
+  .content .detail button {
+    border: none;
+    
+    outline: none;
+    background-color: #ff960b ;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+
+  }
+
+  .content .crypto {
+    margin-left: 170px;
+    margin-top: 400px;
+  }
+
+
+
+
+  .content ul {
+    display: flex;
+  }
+
+  .content ul li {
+    padding: 10px 25px;
+    margin-left: 10px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+  }
+
+  .content ul li img {
+    width: 64px;
+    margin-right: 10px;
+  }
+
+  .content ul li span span {
+    display: block;
+  }
+
+  .content ul li span .currencyName {
+    color: #ff960b;
+  }
